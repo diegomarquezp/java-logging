@@ -52,7 +52,7 @@ If you are using Maven without the BOM, add this to your dependencies:
 If you are using Gradle 5.x or later, add this to your dependencies:
 
 ```Groovy
-implementation platform('com.google.cloud:libraries-bom:26.42.0')
+implementation platform('com.google.cloud:libraries-bom:26.43.0')
 
 implementation 'com.google.cloud:google-cloud-logging'
 ```
@@ -82,7 +82,7 @@ The client application making API calls must be granted [authorization scopes][a
 ### Prerequisites
 
 You will need a [Google Cloud Platform Console][developer-console] project with the Cloud Logging [API enabled][enable-api].
-
+You will need to [enable billing][enable-billing] to use Google Cloud Logging.
 [Follow these instructions][create-project] to get your project set up. You will also need to set up the local development environment by
 [installing the Google Cloud Command Line Interface][cloud-cli] and running the following commands in command line:
 `gcloud auth login` and `gcloud config set project [YOUR PROJECT ID]`.
@@ -102,7 +102,7 @@ use this Cloud Logging Client Library.
 
 
 #### Creating an authorized service object
-
+(test change)
 To make requests to Cloud Logging, you must create a service object with valid credentials.
 You can then make API calls by calling methods on the Logging service object. 
 You can obtain credentials by using [Application Default Credentials](https://developers.google.com/identity/protocols/application-default-credentials).
@@ -464,7 +464,7 @@ Java is a registered trademark of Oracle and/or its affiliates.
 [contributing]: https://github.com/googleapis/java-logging/blob/main/CONTRIBUTING.md
 [code-of-conduct]: https://github.com/googleapis/java-logging/blob/main/CODE_OF_CONDUCT.md#contributor-code-of-conduct
 [license]: https://github.com/googleapis/java-logging/blob/main/LICENSE
-
+[enable-billing]: https://cloud.google.com/apis/docs/getting-started#enabling_billing
 [enable-api]: https://console.cloud.google.com/flows/enableapi?apiid=logging.googleapis.com
 [libraries-bom]: https://github.com/GoogleCloudPlatform/cloud-opensource-java/wiki/The-Google-Cloud-Platform-Libraries-BOM
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
