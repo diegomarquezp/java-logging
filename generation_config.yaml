@@ -1,5 +1,5 @@
 gapic_generator_version: 2.42.0
-googleapis_commitish: a1df09bf1ba0e8d2bfd1a3ec166e61147f25002c
+googleapis_commitish: 7613f7dbea263507d08dfbe8d44115a978617be3
 libraries_bom_version: 26.43.0
 libraries:
   - api_shortname: logging
